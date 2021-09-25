@@ -9,7 +9,6 @@
         --primary-background-color: #FFFFFF;
         --secondary-background-color: #2F303A;
         --third-background-color:#F5F4FA;
-        --btn-background-color: #F5F4FA;
     }
 
     body {
@@ -65,6 +64,11 @@
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
+    }
+
+    .section {
+        padding-top: 94;
+        padding-bottom: 94;
     }
 
 
@@ -153,27 +157,33 @@
     /*-------------------------!* Hero *!--------------------------*/
 
     .hero {
-        background-color: var(--secondary-background-color)
+        background-color: var(--secondary-background-color);
+    }
+
+    .hero-container {
+        max-width: 696px;
+        text-align: center;
+        padding: 200px 0;
     }
 
     .hero-title {
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--secondary-title-color);
+        margin-bottom: 30px;
     }
 
     .hero-primary-btn {
+        padding: 10px 32px;
         font-weight: 700;
         line-height: 1.87;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
+        border-radius: 4px;
         background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: var(--white-text-color);
 
     }
@@ -282,7 +292,7 @@
             line-height: 1.62;
             text-align: center;
             color: var(--secondary-text-color);
-            background-color: var(--btn-background-color);
+            background-color: #F5F4FA;
         }
 
         .projects-btn:hover,
