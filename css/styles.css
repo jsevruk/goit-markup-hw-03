@@ -46,6 +46,17 @@
         list-style: none;
     }
 
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+    }
+
     .container {
         width: 1200px;
         padding: 0 15px;
@@ -79,6 +90,7 @@
    .header {
        padding-top: 24px;
        padding-bottom: 24px;
+       border-bottom: 1px solid #ECECEC;
    }
 
     .header-container {
@@ -236,13 +248,11 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
-        margin-bottom: -30px;
     }
 
     .about-item {
         flex-basis: calc(100% / 3 - 30px);
         margin-right: 30px;
-        margin-bottom: 30px;
     }
 
 
@@ -301,12 +311,21 @@
           background-color: var(--secondary-background-color);
         }
 
+        .footer-container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
         .footer-logo {
             font-family: Raleway, sans-serif;
             font-weight: 700;
             font-size: 26px;
             line-height: 1.19;
-            color: var(--accent-color)
+            color: var(--accent-color);
+        }
+
+        .footer-logo-bottom {
+            margin-bottom: 20px;
         }
 
         .footer-logo-white {
@@ -316,6 +335,15 @@
         .footer-address {
             font-style: normal;
         }
+
+        .footer-item-bottom-9 {
+            margin-bottom: 9px;
+        }
+
+        .footer-item-bottom-6 {
+            margin-bottom: 6px;
+        }
+
 
         .footer .footer-address-link {
             line-height: 1.71;
